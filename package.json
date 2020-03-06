@@ -1,9 +1,15 @@
 {
-  "name": "changlog-emojis",
-  "version": "0.0.1",
-  "main": "index.js",
-  "author": "codeyhj",
+  "name": "@codeyhj/changlog-emojis",
+  "version": "0.0.4",
+  "main": "./src/index.js",
+  "author": "codeyhj<colgateyhj@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/CodeYHJ/changelog-emoji",
+  "repository": "https://github.com/CodeYHJ/changelog-emoji",
+  "scripts": {
+    "commit": "git add . && git-cz && git push",
+    "test": "mocha ./test/**/*.js"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -x @commitlint/config-conventional -E GIT_PARAMS"
@@ -16,7 +22,6 @@
   },
   "dependencies": {
     "conventional-changelog-cli": "^2.0.31",
-    "conventional-commit-types-emoji": "^0.1.0",
     "lodash.map": "^4.6.0",
     "longest": "^2.0.0",
     "pad-right": "^0.2.2",
@@ -24,9 +29,11 @@
     "word-wrap": "^1.1.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "commitizen": "^4.0.3",
     "husky": "^4.2.3",
     "jshint": "2.9.4",
+    "mocha": "^7.1.0",
     "standard-version": "4.3.0"
   }
 }
