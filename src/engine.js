@@ -134,11 +134,13 @@ module.exports = function (options) {
           ": " +
           answers.subject.trim()
         ).slice(0, maxLineWidth);
-console.log(emoji,"type",answers.type,"scope",scope,"subject",answers.subject)
+
         // Wrap these lines at 100 characters
         const body = wrap(answers.body, wrapOptions);
         const footer = wrap(answers.footer, wrapOptions);
 
+        const a = head + "\n\n" + body + "\n\n" + footer
+        console.log(a.match(/.*/))
         commit(head + "\n\n" + body + "\n\n" + footer);
       });
     },
