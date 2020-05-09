@@ -1,0 +1,55 @@
+{
+    "config": {
+        "emojiConfig": {
+            "path": "./test/testEmoji.js",
+            "langue": "cn"
+        }
+    } ,
+    "all": {
+        "config": {
+            "emojiConfig": {
+                "path": "zxc",
+                "langue": "czxc"
+            }
+        }
+    },
+
+    "noEmojiConfig": {
+        "config": {}
+    },
+    "noConfig": {},
+    "hasEmoji":{
+        "config": {
+            "emojiConfig": {
+                "path": "./test/testEmoji.js"
+            }
+        }
+    },
+    "noPath": {
+        "config": {
+            "emojiConfig": {
+                "langue": ""
+            }
+        }
+    },
+    "hasLangue":{
+        "config": {
+            "emojiConfig": {
+                "langue":"en"
+            }
+        }
+    },
+    "langueNotString":{
+        "config": {
+            "emojiConfig": {
+                "langue":12
+            }
+        }
+    },
+    "noLangue": {
+        "config": {
+            "emojiConfig": {
+            }
+        }
+    }
+}

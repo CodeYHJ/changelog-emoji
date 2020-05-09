@@ -12,12 +12,15 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -x @commitlint/config-conventional -E GIT_PARAMS"
+      "commit-msg": "validate-commit-msg"
     }
   },
   "config": {
     "commitizen": {
       "path": "./src/index.js"
+    },
+    "emojiConfig": {
+      "langue": "cn"
     }
   },
   "dependencies": {
