@@ -139,10 +139,10 @@ module.exports = function (options) {
         const body = wrap(answers.body, wrapOptions);
         const footer = wrap(answers.footer, wrapOptions);
 
-        const a = head + "\n\n" + body + "\n\n" + footer
-        const n = a.match(/.*/)
-        console.log(n,String(n[0]))
-        return;
+        // const a = head + "\n\n" + body + "\n\n" + footer
+        // const n = a.match(/.*/)
+        // console.log(n,String(n[0]))
+        // return;
         commit(head + "\n\n" + body + "\n\n" + footer);
       });
     },
