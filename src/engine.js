@@ -128,8 +128,7 @@ module.exports = function (options) {
         const emoji = types[answers.type].emoji;
         // Hard limit this line
         const head = (
-          // emoji +
-          // " " +
+          emoji +
           answers.type +
           scope +
           ": " +

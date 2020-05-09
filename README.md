@@ -21,4 +21,4 @@
 ```
 ## Emoji模板
 
-请参照目录`src/emoji.js`
+请参照目录`src/emoji.js` 
