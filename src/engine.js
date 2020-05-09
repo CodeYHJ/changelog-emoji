@@ -140,7 +140,9 @@ module.exports = function (options) {
         const footer = wrap(answers.footer, wrapOptions);
 
         const a = head + "\n\n" + body + "\n\n" + footer
-        console.log(a.match(/.*/))
+        const n = a.match(/.*/)
+        console.log(n,String(n[0]))
+        return;
         commit(head + "\n\n" + body + "\n\n" + footer);
       });
     },
