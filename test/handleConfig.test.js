@@ -4,7 +4,7 @@ const { assert } = chai;
 
 const handleConfig = require("../src/handleConfig");
 
-const emoji = require("../src/emoji").emojis;
+const emoji = require("../src/emoji");
 
 const path = require("path");
 

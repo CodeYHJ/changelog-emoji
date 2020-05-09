@@ -128,14 +128,14 @@ module.exports = function (options) {
         const emoji = types[answers.type].emoji;
         // Hard limit this line
         const head = (
-          emoji +
-          " " +
+          // emoji +
+          // " " +
           answers.type +
           scope +
           ": " +
           answers.subject.trim()
         ).slice(0, maxLineWidth);
-
+console.log(emoji,"type",answers.type,"scope",scope,"subject",answers.subject)
         // Wrap these lines at 100 characters
         const body = wrap(answers.body, wrapOptions);
         const footer = wrap(answers.footer, wrapOptions);

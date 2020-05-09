@@ -26,7 +26,7 @@ module.exports = () => {
 
     handleEmojiPath(emojiConfig) {
       if (!emojiConfig || !emojiConfig.hasOwnProperty("path"))
-        return require("./emoji.js").emojis;
+        return require("./emoji.js");
       return require(path.resolve(process.cwd(), emojiConfig.path));
     },
 

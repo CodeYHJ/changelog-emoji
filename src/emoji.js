@@ -1,5 +1,4 @@
 module.exports = {
-  emojis: {
     feat: {
       emoji: "✨",
       code: ":sparkles:",
@@ -90,5 +89,4 @@ module.exports = {
       description: "Adding or updating seed files",
       name: "adUpRe"
     }
-  }
 };

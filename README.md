@@ -13,9 +13,12 @@
 
 "config":{
     emojiConfig:{
-        path:'xxxx', // 相对于项目根路径
+        path:'xxxx', // 自定义Emoji文件路径(相对于项目根路径)
         langue:'en', // 默认en，可选择cn
     }
 }
 
 ```
+## Emoji模板
+
+请参照目录`src/emoji.js`
